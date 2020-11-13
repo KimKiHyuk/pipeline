@@ -18,7 +18,7 @@ resource "google_dataproc_cluster" "cluster" {
     staging_bucket = google_storage_bucket.bucket.name
 
     master_config {
-      num_instances = 1
+      num_instances = 3
       machine_type  = local.machine
 
       disk_config {
